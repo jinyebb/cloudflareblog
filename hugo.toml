@@ -1,0 +1,4 @@
+baseURL = 'http://jinye.eu.org/'
+languageCode = 'en-us'
+title = 'y Site'
+theme = 'hugo-y'

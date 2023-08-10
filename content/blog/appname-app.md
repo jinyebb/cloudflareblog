@@ -12,7 +12,7 @@ tags = []
 
 **1.开启任何来源**
 ```
-sudo spctl –master-disable
+sudo spctl --master-disable
 ```
 
 **2.如以上方式无效,使用下面方法**

@@ -1,5 +1,5 @@
 +++
-title = "Docker安装Excalidraw画图工具"
+title = "Docker搭建Excalidraw画图工具"
 date = "2023-08-14T20:27:30+08:00"
 
 #

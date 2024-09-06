@@ -1,4 +1,4 @@
-baseURL = 'http://jinye.eu.org/'
+baseURL = 'https://jinye.org/'
 languageCode = 'en-us'
 title = 'Welcome !'
 theme = 'hugo-y'

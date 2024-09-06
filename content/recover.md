@@ -13,11 +13,11 @@ weight = "2"
 [https://www.7-zip.org](https://www.7-zip.org "Title")
 
 Internet Download Manager  
-一个用于Windows系统的下载管理器  
+用于Windows系统的下载管理器  
 [https://www.internetdownloadmanager.com](https://www.internetdownloadmanager.com "Title")
 
 Vivaldi  
-全平台浏览器（同步功能需要流量转发工具）  
+全平台浏览器  
 [https://vivaldi.com/zh-hans/](https://vivaldi.com/zh-hans/ "Title")
 
 Potplayer  

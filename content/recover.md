@@ -85,7 +85,7 @@ Rufus
 [https://rufus.ie](https://rufus.ie "Title")
 
 Ventoy  
-多系统系统U盘引导  
+多系统U盘引导  
 [https://www.ventoy.net](https://www.ventoy.net "Title")
 
 LocalSend  
@@ -108,3 +108,20 @@ FreeTube
 Youtube第三方客户端  
 [https://freetubeapp.io](https://freetubeapp.io "Title")
 
+## MacOS
+
+Homebrew  
+自由及开放源代码的软件包管理系统  
+[https://brew.sh](https://brew.sh "Title")
+
+MacZip  
+压缩软件  
+[https://ezip.awehunt.com](https://ezip.awehunt.com "Title")
+
+IINA  
+Mac下最好的播放器  
+[https://iina.io](https://iina.io "Title")
+
+TextMate  
+文本编辑器  
+[https://macromates.com](https://macromates.com "Title")

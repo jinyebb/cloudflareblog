@@ -108,7 +108,7 @@ FreeTube
 Youtube第三方客户端  
 [https://freetubeapp.io](https://freetubeapp.io "Title")
 
-## MacOS
+### MacOS
 
 Homebrew  
 自由及开放源代码的软件包管理系统  
@@ -125,3 +125,30 @@ Mac下最好的播放器
 TextMate  
 文本编辑器  
 [https://macromates.com](https://macromates.com "Title")
+
+Fliqlo  
+Apple平台下时钟屏幕保护程序  
+[https://fliqlo.com](https://fliqlo.com "Title")
+
+SwitchResX  
+分辨率定制程序  
+[https://www.madrau.com](https://www.madrau.com "Title")
+
+Mos  
+平滑鼠标滚动效果  
+[https://mos.caldis.me](https://mos.caldis.me "Title")
+
+Macs Fan Control  
+接管Apple计算机上的风扇  
+[https://crystalidea.com/macs-fan-control](https://crystalidea.com/macs-fan-control "Title")
+
+Neat Download Manager  
+下载管理器  
+[https://www.neatdownloadmanager.com/index.php/en](https://www.neatdownloadmanager.com/index.php/en "Title")
+
+### Android
+
+F-Droid  
+开源软件目录  
+[https://f-droid.org/zh_Hans](https://f-droid.org/zh_Hans "Title")
+

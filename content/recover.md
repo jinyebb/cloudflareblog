@@ -152,3 +152,35 @@ F-Droid
 开源软件目录  
 [https://f-droid.org/zh_Hans](https://f-droid.org/zh_Hans "Title")
 
+Filmly  
+跨平台媒体库  
+[https://filmly.163.com](https://filmly.163.com "Title")
+
+NOVA  
+开源媒体库  
+[https://github.com/nova-video-player/aos-AVP](https://github.com/nova-video-player/aos-AVP "Title")
+
+Organic Maps  
+开源离线地图  
+[https://github.com/organicmaps/organicmaps](https://github.com/organicmaps/organicmaps "Title")
+
+Aurora Store  
+无需Google框架,保护隐私的Google Play Store非官方客户端  
+[https://github.com/whyorean/AuroraStore](https://github.com/whyorean/AuroraStore "Title")
+
+Breezy Weather  
+开源天气应用  
+[https://github.com/breezy-weather/breezy-weather](https://github.com/breezy-weather/breezy-weather "Title")
+
+OpenScan  
+扫描PDF应用  
+[https://github.com/ethereal-developers/OpenScan](https://github.com/ethereal-developers/OpenScan "Title")
+
+Loop Habit Tracker  
+习惯计划追踪器  
+[https://github.com/iSoron/uhabits?tab=readme-ov-file](https://github.com/iSoron/uhabits?tab=readme-ov-file "Title")
+
+洛雪  
+音乐串流播放器  
+[https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
+

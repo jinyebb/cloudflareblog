@@ -119,7 +119,7 @@ FreeTube
 Youtube第三方客户端  
 [https://freetubeapp.io](https://freetubeapp.io "Title")
 
-### macos
+# macos
 
 Homebrew  
 自由及开放源代码的软件包管理系统  

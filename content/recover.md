@@ -16,9 +16,7 @@ weight = "2"
 
 
 
-
-
-## Windows <a name="Windows"></a>
+### Windows <a name="Windows"></a>
 7-Zip  
 开源的数据压缩程序  
 [https://www.7-zip.org](https://www.7-zip.org "Title")
@@ -119,7 +117,7 @@ FreeTube
 Youtube第三方客户端  
 [https://freetubeapp.io](https://freetubeapp.io "Title")
 
-## MacOS <a name="MacOS"></a>
+### MacOS <a name="MacOS"></a>
 
 Homebrew  
 自由及开放源代码的软件包管理系统  
@@ -157,7 +155,7 @@ Neat Download Manager
 下载管理器  
 [https://www.neatdownloadmanager.com/index.php/en](https://www.neatdownloadmanager.com/index.php/en "Title")
 
-## Android <a name="Android"></a>
+### Android <a name="Android"></a>
 
 F-Droid  
 开源软件目录  

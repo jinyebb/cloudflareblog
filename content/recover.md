@@ -12,6 +12,7 @@ weight = "2"
 ## List
 * [Windows](#windows)
 * [MacOS](#macos)
+* [iOS](#ios)
 * [Android](#android)
 * [Android TV](#android_tv)
 
@@ -22,7 +23,7 @@ weight = "2"
 
 {{< anchor id="windows" >}}
 
-![windows](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/windows00.jpg "windows")  
+![windows](https://raw.githubusercontent.com/luca6868/hugo-y/main/list/list_windows.jpg "windows")  
 7-Zip  
 开源的数据压缩程序  
 [https://www.7-zip.org](https://www.7-zip.org "Title")
@@ -163,9 +164,16 @@ Neat Download Manager
 下载管理器  
 [https://www.neatdownloadmanager.com/index.php/en](https://www.neatdownloadmanager.com/index.php/en "Title")
 
+
+{{< anchor id="ios" >}}
+
+![ios](https://raw.githubusercontent.com/luca6868/hugo-y/main/list/list_ios.jpg "ios")  
+
+
+
 {{< anchor id="android" >}}
 
-![android](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/android.jpg "android")  
+![android](https://raw.githubusercontent.com/luca6868/hugo-y/main/list/list_android.jpg "android")  
 F-Droid  
 开源软件目录  
 [https://f-droid.org/zh_Hans](https://f-droid.org/zh_Hans "Title")
@@ -204,5 +212,5 @@ Loop Habit Tracker
 
 {{< anchor id="android_tv" >}}
 
-![android](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/android_tv00.jpg "android")  
+![android_tv](https://raw.githubusercontent.com/luca6868/hugo-y/main/list/list_android_tv.jpg "android_tv")  
 

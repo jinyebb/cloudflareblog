@@ -7,7 +7,7 @@ weight = "2"
 
 ## Software List Required for New Devices or System Recovery
 
-[直接跳转](#hahaha)
+[跳转到黑](#hei)
 
 ## List
 * [Windows](#windows)
@@ -196,7 +196,7 @@ Loop Habit Tracker
 [https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
 
 
-<span id="hahaha"></span>
+<div id="hei"></div>
 
 
 <a id="图片"></a>

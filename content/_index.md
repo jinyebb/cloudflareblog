@@ -9,31 +9,3 @@ Good design is as little design as possible.<br />
 
 ![](https://img1.imgtp.com/2023/10/19/E84Ukd7t.gif)
 
-
-<body>
-	<!-- 锚点跳转 -->
-    <a href="#img-1">第1张</a>
-    <a href="#img-2">第2张</a>
-    <a href="#img-3">第3张</a>
-    <a href="#img-4">第4张</a>
-    <a href="#img-5">第5张</a>
- 
-    <!-- 内容区 -->
-    <h2 id="img-1">欢度国庆1</h2>
-    <img src="https://pic.ntimg.cn/BannerPic/20220930/home/20220930104529.jpg">
-    <h2 id="img-2">欢度国庆2</h2>
-    <img src="https://pic.ntimg.cn/BannerPic/20220926/home/20220926182231.jpg">
-    <h2 id="img-3">欢度国庆3</h2>
-    <img src="https://pic.ntimg.cn/BannerPic/20220930/home/20220930104529.jpg">
-    <h2 id="img-4">欢度国庆4</h2>
-    <img src="https://pic.ntimg.cn/BannerPic/20220926/home/20220926182231.jpg">
-    <h2 id="img-5">欢度国庆5</h2>
-    <img src="https://pic.ntimg.cn/BannerPic/20220930/home/20220930104529.jpg">
- 
-    <!-- 锚点跳转 -->
-    <a href="#img-1">第1张</a>
-    <a href="#img-2">第2张</a>
-    <a href="#img-3">第3张</a>
-    <a href="#img-4">第4张</a>
-    <a href="#img-5">第5张</a>
-</body>

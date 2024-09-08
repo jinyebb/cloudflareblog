@@ -15,9 +15,7 @@ weight = "2"
 * [Android TV](#Android_TV)
 
 
-## 第一部分 <a id="custom-id"></a>
-
-这里是第一部分的内容。
+# 标题网址
 
 
 ### Windows <a name="Windows"></a>
@@ -199,4 +197,8 @@ Loop Habit Tracker
 
 
 
-[跳转到自定义部分](#custom-id)
+[点击这里跳转到]({{  < relref "#跳转路径" >  }})
+
+
+
+<a href="#标题网址">xx</a>

@@ -204,5 +204,5 @@ Loop Habit Tracker
 
 {{< anchor id="android_tv" >}}
 
-![android](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/android_tv.jpg "android")  
+![android](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/android_tv00.jpg "android")  
 

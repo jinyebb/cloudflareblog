@@ -14,7 +14,7 @@ weight = "2"
 * [Android](#android)
 * [Android TV](#Android_TV)
 
-[跳转到图片](#chinabb)
+[跳转到图片](#图片)
 
 ### windows
 
@@ -198,5 +198,5 @@ Loop Habit Tracker
 
 
 
-<a id="chinabb"></a>
+<a id="图片"></a>
 ![示例图片](https://photokit.com/features/images/image-text2.webp)

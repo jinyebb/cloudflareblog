@@ -14,7 +14,7 @@ weight = "2"
 * [Android](#android)
 * [Android TV](#Android_TV)
 
-
+[跳转到图片](#image-target)
 
 ### windows
 
@@ -195,3 +195,8 @@ Loop Habit Tracker
 [https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
 
 
+
+
+
+<a id="image-target"></a>
+![示例图片](https://photokit.com/features/images/image-text2.webp)

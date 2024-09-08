@@ -67,3 +67,11 @@ Shortcode会生成一个带有指定ID的锚点
 {{< anchor id="display" >}}
 这里是显示部分的内容。
 ```
+
+
+22
+
+```
+{{< anchor id%"display" >}}
+// 该段语法中%替换为=
+```

@@ -43,8 +43,7 @@ Shortcode会生成一个带有指定ID的锚点
 
 在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：
 ```
-{{< anchor id%"display" >}}
-// 该段语法中%替换为=
+该段语法中%替换为=
 ```
 这行代码会在生成的HTML中插入一个带有ID:display的锚点。
 
@@ -67,6 +66,3 @@ Shortcode会生成一个带有指定ID的锚点
 {{< anchor id="display" >}}
 这里是显示部分的内容。
 ```
-
-
-123456

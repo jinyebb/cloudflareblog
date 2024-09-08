@@ -15,7 +15,7 @@ weight = "2"
 * [Android](#android)
 * [Android TV](#Android_TV)
 
-[跳转](#display)
+
 
 ###
 
@@ -196,4 +196,4 @@ Loop Habit Tracker
 [https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
 
 
-<h2 id="display">1</h2>
+[跳转到显示部分](#display)

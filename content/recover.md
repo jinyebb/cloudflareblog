@@ -23,6 +23,7 @@ weight = "2"
 {{< anchor id="windows" >}}
 
 ![windows](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/windows.jpg "windows")  
+
 7-Zip  
 开源的数据压缩程序  
 [https://www.7-zip.org](https://www.7-zip.org "Title")
@@ -123,9 +124,10 @@ FreeTube
 Youtube第三方客户端  
 [https://freetubeapp.io](https://freetubeapp.io "Title")
 
-# macos
 
 {{< anchor id="macos" >}}
+
+![windows](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/mac.jpg "windows")  
 
 Homebrew  
 自由及开放源代码的软件包管理系统  

@@ -43,13 +43,13 @@ Shortcode会生成一个带有指定ID的锚点
 
 在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：
 ```
-<a id="{{ .Get "id" }}"></a>
+{{< anchor id="display" >}}
 ```
 这行代码会在生成的HTML中插入一个带有ID:display的锚点。
 
 ***4.链接到锚点***
 
-在Markdown文件中的其他地方创建链接，指向这个锚点：
+在Markdown文件中的其他位置创建链接，指向这个锚点：
 ```
 [跳转到锚点](#display)
 ```

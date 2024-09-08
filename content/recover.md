@@ -22,7 +22,7 @@ weight = "2"
 
 {{< anchor id="windows" >}}
 
-![描述图片](https://raw.githubusercontent.com/luca6868/cloudflareblog/main/a001.jpg "图片标题")  
+![windows](http://dev.jinye.org/img/windows.png "windows")  
 7-Zip  
 开源的数据压缩程序  
 [https://www.7-zip.org](https://www.7-zip.org "Title")

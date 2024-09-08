@@ -6,9 +6,9 @@ weight = "2"
 
 
 ## Software List Required for New Devices or System Recovery
-### Windows
 
-## 目录
+
+## List
 * [Windows](#windows)
 * [MacOS](#macos)
 * [Android](#android)
@@ -16,7 +16,8 @@ weight = "2"
 
 
 
-# windows
+### windows
+
 7-Zip  
 开源的数据压缩程序  
 [https://www.7-zip.org](https://www.7-zip.org "Title")

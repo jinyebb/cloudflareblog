@@ -9,7 +9,7 @@ weight = "2"
 ### Windows
 
 ## 目录
-[Windows](#Windows)
+[Windows](#windows)
 
 [MacOS](#MacOS)
 
@@ -17,11 +17,12 @@ weight = "2"
 
 * [Android TV](#Android_TV)
 
+[替换文本](#标题网址)
 
-### 标题网址
+[跳转](#跳转)
 
 
-### Windows
+# windows
 7-Zip  
 开源的数据压缩程序  
 [https://www.7-zip.org](https://www.7-zip.org "Title")
@@ -206,4 +207,7 @@ Loop Habit Tracker
 
 <a href="#标题网址">xx</a>
 
-[替换文本](#标题网址)
+### 标题网址
+
+
+### 跳转

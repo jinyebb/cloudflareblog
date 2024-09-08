@@ -42,10 +42,9 @@ Shortcode会生成一个带有指定ID的锚点
 ***3.在Markdown文件中插入Shortcode***
 
 在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：
-```
 
-该段语法中%替换为=
-```
+![描述图片](https://github.com/luca6868/cloudflareblog/blob/main/shortcode.jpg?raw=true "图片标题")
+
 这行代码会在生成的HTML中插入一个带有ID:display的锚点。
 
 ***4.链接到锚点***

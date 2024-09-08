@@ -10,14 +10,14 @@ weight = "2"
 我们跳转过去：[跳转指定位置](#divtop)
 
 ## List
-* [Windows](#windows)
+* [123](windows软件)
 * [MacOS](#macos)
 * [Android](#android)
 * [Android TV](#Android_TV)
 
-[跳转到图片](#图片)
+[跳转](#display)到第一个图片。
 
-### windows
+###
 
 7-Zip  
 开源的数据压缩程序  
@@ -196,7 +196,4 @@ Loop Habit Tracker
 [https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
 
 
-
-
-
-<a name="divtop"></a>
+<a id="display"></a> 

@@ -10,16 +10,17 @@ weight = "2"
 
 
 ## List
-* [123](windows软件)
+* [Windows](#windows)
 * [MacOS](#macos)
 * [Android](#android)
 * [Android TV](#Android_TV)
 
 
-[跳转到显示部分](#display)
 
 
-###
+
+
+{{< anchor id="windows" >}}
 
 7-Zip  
 开源的数据压缩程序  
@@ -198,4 +199,4 @@ Loop Habit Tracker
 [https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
 
 
-{{< anchor id="display" >}}
+

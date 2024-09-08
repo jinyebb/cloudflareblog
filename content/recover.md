@@ -21,7 +21,7 @@ weight = "2"
 ### 标题网址
 
 
-### Windows <a name="Windows"></a>
+### Windows
 7-Zip  
 开源的数据压缩程序  
 [https://www.7-zip.org](https://www.7-zip.org "Title")
@@ -122,7 +122,7 @@ FreeTube
 Youtube第三方客户端  
 [https://freetubeapp.io](https://freetubeapp.io "Title")
 
-### MacOS <a name="MacOS"></a>
+### MacOS
 
 Homebrew  
 自由及开放源代码的软件包管理系统  

@@ -22,7 +22,7 @@ weight = "2"
 
 {{< anchor id="windows" >}}
 
-![windows](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/windows.jpg "windows")  
+![windows](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/windows2.jpg "windows")  
 
 7-Zip  
 开源的数据压缩程序  

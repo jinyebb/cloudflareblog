@@ -27,10 +27,10 @@ Hugo常规的锚点跳转Markdown语法为：
 
 而锚点跳转到页面指定位置，并非某段文章标题时，可以使用Hugo Shortcodes，操作如下：
 
-**1.创建Shortcode文件**
+**1.创建Shortcode文件**  
 Hugo项目的根目录下，找到或创建一个layouts/shortcodes 目录。
 
-**2.编辑Shortcode文件**
+**2.编辑Shortcode文件**  
 编辑或创建anchor.html文件，并添加如下内容：
 ```
 <a id="{{ .Get "id" }}"></a>
@@ -44,13 +44,13 @@ Shortcode会生成一个带有指定ID的锚点
 ```
 这行代码会在生成的HTML中插入一个带有ID:display的锚点。
 
-**4.链接到锚点**
+**4.链接到锚点**  
 在Markdown文件中的其他地方创建链接，指向这个锚点：
 ```
 [跳转到锚点](#display)
 ```
 
-**5.完整示例**
+**5.完整示例**  
 ```
 ## 目录
 

@@ -127,7 +127,7 @@ Youtube第三方客户端
 
 {{< anchor id="macos" >}}
 
-![macos](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/mac.jpg "macos")  
+![macos](https://raw.githubusercontent.com/luca6868/hugo-y/main/list/list_macos.jpg "macos")  
 Homebrew  
 自由及开放源代码的软件包管理系统  
 [https://brew.sh](https://brew.sh "Title")

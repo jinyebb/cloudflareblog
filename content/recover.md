@@ -13,7 +13,7 @@ weight = "2"
 * [Windows](#windows)
 * [MacOS](#macos)
 * [Android](#android)
-* [Android TV](#Android_TV)
+* [Android TV](#android_tv)
 
 
 
@@ -202,5 +202,7 @@ Loop Habit Tracker
 音乐串流播放器  
 [https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
 
+{{< anchor id="android_tv" >}}
 
+![android](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/android_tv.jpg "android")  
 

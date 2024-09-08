@@ -7,7 +7,7 @@ weight = "2"
 
 ## Software List Required for New Devices or System Recovery
 
-我们跳转过去：[跳转指定位置](#divtop)
+
 
 ## List
 * [123](windows软件)
@@ -15,6 +15,8 @@ weight = "2"
 * [Android](#android)
 * [Android TV](#Android_TV)
 
+
+[跳转到显示部分](#display)
 
 
 ###
@@ -196,4 +198,4 @@ Loop Habit Tracker
 [https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
 
 
-[跳转到显示部分](#display)
+{{< anchor id="display" >}}

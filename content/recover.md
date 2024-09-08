@@ -23,7 +23,6 @@ weight = "2"
 {{< anchor id="windows" >}}
 
 ![windows](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/windows00.jpg "windows")  
-
 7-Zip  
 开源的数据压缩程序  
 [https://www.7-zip.org](https://www.7-zip.org "Title")
@@ -128,7 +127,6 @@ Youtube第三方客户端
 {{< anchor id="macos" >}}
 
 ![macos](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/mac.jpg "macos")  
-
 Homebrew  
 自由及开放源代码的软件包管理系统  
 [https://brew.sh](https://brew.sh "Title")
@@ -168,7 +166,6 @@ Neat Download Manager
 {{< anchor id="android" >}}
 
 ![android](https://raw.githubusercontent.com/luca6868/hugo-y/main/img/android.jpg "android")  
-
 F-Droid  
 开源软件目录  
 [https://f-droid.org/zh_Hans](https://f-droid.org/zh_Hans "Title")

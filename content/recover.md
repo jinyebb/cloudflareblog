@@ -124,6 +124,8 @@ Youtube第三方客户端
 
 # macos
 
+{{< anchor id="macos" >}}
+
 Homebrew  
 自由及开放源代码的软件包管理系统  
 [https://brew.sh](https://brew.sh "Title")

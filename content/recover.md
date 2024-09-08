@@ -10,16 +10,10 @@ weight = "2"
 
 ## 目录
 * [Windows](#windows)
-
-[MacOS](#MacOS)
-
-[Android](#Android)
-
+* [MacOS](#macos)
+* [Android](#android)
 * [Android TV](#Android_TV)
 
-[替换文本](#标题网址)
-
-[跳转](#跳转)
 
 
 # windows
@@ -123,7 +117,7 @@ FreeTube
 Youtube第三方客户端  
 [https://freetubeapp.io](https://freetubeapp.io "Title")
 
-### MacOS
+### macos
 
 Homebrew  
 自由及开放源代码的软件包管理系统  
@@ -161,7 +155,7 @@ Neat Download Manager
 下载管理器  
 [https://www.neatdownloadmanager.com/index.php/en](https://www.neatdownloadmanager.com/index.php/en "Title")
 
-### Android <a name="Android"></a>
+### android
 
 F-Droid  
 开源软件目录  
@@ -200,14 +194,3 @@ Loop Habit Tracker
 [https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
 
 
-
-[点击这里跳转到]({{  < relref "#跳转路径" >  }})
-
-
-
-<a href="#标题网址">xx</a>
-
-### 标题网址
-
-
-### 跳转

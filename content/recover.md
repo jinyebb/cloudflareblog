@@ -8,6 +8,17 @@ weight = "2"
 ## Software List Required for New Devices or System Recovery
 ### Windows
 
+## 目录
+* [Windows](#Windows)
+* [MacOS](#MacOS)
+* [Android](#Android)
+* [Android TV](#Android_TV)
+
+
+
+
+
+## Windows <a name="Windows"></a>
 7-Zip  
 开源的数据压缩程序  
 [https://www.7-zip.org](https://www.7-zip.org "Title")
@@ -108,7 +119,7 @@ FreeTube
 Youtube第三方客户端  
 [https://freetubeapp.io](https://freetubeapp.io "Title")
 
-### MacOS
+## MacOS <a name="MacOS"></a>
 
 Homebrew  
 自由及开放源代码的软件包管理系统  
@@ -146,7 +157,7 @@ Neat Download Manager
 下载管理器  
 [https://www.neatdownloadmanager.com/index.php/en](https://www.neatdownloadmanager.com/index.php/en "Title")
 
-### Android
+## Android <a name="Android"></a>
 
 F-Droid  
 开源软件目录  

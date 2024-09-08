@@ -9,7 +9,7 @@ weight = "2"
 ### Windows
 
 ## 目录
-[Windows](#windows)
+* [Windows](#windows)
 
 [MacOS](#MacOS)
 

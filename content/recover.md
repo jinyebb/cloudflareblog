@@ -137,7 +137,7 @@ MacZip
 [https://ezip.awehunt.com](https://ezip.awehunt.com "Title")
 
 IINA  
-Mac下最好的播放器  
+视频播放器  
 [https://iina.io](https://iina.io "Title")
 
 TextMate  
@@ -157,7 +157,7 @@ Mos
 [https://mos.caldis.me](https://mos.caldis.me "Title")
 
 Macs Fan Control  
-接管Apple计算机上的风扇  
+接管Mac上的风扇控制  
 [https://crystalidea.com/macs-fan-control](https://crystalidea.com/macs-fan-control "Title")
 
 Neat Download Manager  
@@ -168,7 +168,7 @@ Neat Download Manager
 {{< anchor id="ios" >}}
 
 ![ios](https://raw.githubusercontent.com/luca6868/hugo-y/main/list/list_ios.jpg "ios")  
-
+待添加  
 
 
 {{< anchor id="android" >}}

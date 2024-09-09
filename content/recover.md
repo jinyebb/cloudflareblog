@@ -16,7 +16,7 @@ weight = "2"
 * [Android](#android)
 * [Android TV](#android_tv)
 
-
+---
 
 
 
@@ -178,6 +178,10 @@ F-Droid
 开源软件目录  
 [https://f-droid.org/zh_Hans](https://f-droid.org/zh_Hans "Title")
 
+Aves  
+开源相册应用  
+[https://github.com/deckerst/aves](https://github.com/deckerst/aves "Title")
+
 Filmly  
 跨平台媒体库  
 [https://filmly.163.com](https://filmly.163.com "Title")
@@ -209,6 +213,10 @@ Loop Habit Tracker
 洛雪  
 音乐串流播放器  
 [https://github.com/lyswhut/lx-music-mobile](https://github.com/lyswhut/lx-music-mobile "Title")
+
+
+
+
 
 {{< anchor id="android_tv" >}}
 

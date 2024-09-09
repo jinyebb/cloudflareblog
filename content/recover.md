@@ -14,10 +14,12 @@ weight = "2"
 * [MacOS](#macos)
 * [iOS](#ios)
 * [Android](#android)
-* [Android TV](#android_tv)
+* [Android TV](#android_tv)  
+
+新设备或旧设备恢复时的个人常用软件库备份，不构成对访问者的推荐建议，不保证软件的安全与稳定性！
 
 ---
-
+{{< fontsize size="20px" >}}这是20像素的文本。{{< /fontsize >}}
 
 
 

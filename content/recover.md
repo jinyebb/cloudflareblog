@@ -16,7 +16,7 @@ weight = "2"
 * [Android](#android)
 * [Android TV](#android_tv)  
 
-{{< fontsize size="13px" >}}新设备或设备恢复时的个人常用软件库备份，不构成任何的推荐建议，不保证软件的安全与稳定性！{{< /fontsize >}}
+{{< fontsize size="13px" >}}新设备或设备恢复时的个人常用软件库备份，不构成任何软件的推荐分享，不保证任何软件的安全及稳定性！{{< /fontsize >}}
 
 ---
 

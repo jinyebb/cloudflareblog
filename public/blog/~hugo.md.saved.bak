@@ -16,7 +16,6 @@ tags = []
 * [在Hugo中嵌入视频](#hugo03)
 * [Markdown超链接在新窗口中打开](#hugo04)
 * [Hugo中调整Markdown字体大小](#hugo05)
-* [在Hugo中锚点跳转的应用](#hugo06)
 
 ---
 
@@ -291,11 +290,9 @@ hugo server
 {@{< fontsize size="20px" >}}这是20像素的文本。{@{< /fontsize >}}
 ```
 
+
 ---
 
-{{< anchor id="hugo06" >}}
-
-## 在Hugo中锚点跳转的应用
 
 Hugo常规的锚点跳转Markdown语法为：
 
@@ -330,10 +327,7 @@ Shortcode会生成一个带有指定ID的锚点
 
 在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：
 
-```
-##编辑时将@删除
-{@{< anchor id="display" >}@}
-```
+![描述图片](https://github.com/luca6868/hugo-y/blob/main/img/shortcode.jpg?raw=true "图片标题")
 
 这行代码会在生成的HTML中插入一个带有ID:display的锚点。
 

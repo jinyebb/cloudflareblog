@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Welcome !</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blogs on Welcome !</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Sep 2024 20:16:16 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HACS无法安装midea ac lan的解决方法</title>
+      <link>http://localhost:1313/blog/midea-ac-lan/</link>
+      <pubDate>Wed, 11 Sep 2024 20:16:16 +0800</pubDate>
+      <guid>http://localhost:1313/blog/midea-ac-lan/</guid>
+      <description>&lt;p&gt;1.导航到/homeassistant/custom_components目录&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd /homeassistant/custom_components&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.从Releases页面下载midea_ac_lan.zip&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wget https://github.com/georgezhao2010/midea_ac_lan/releases/download/v0.3.22/midea_ac_lan.zip -O midea_ac_lan.zip&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.解压缩midea_ac_lan.zip&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;unzip -d ./midea_ac_lan/ midea_ac_lan.zip&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.清理下载的midea_ac_lan.zip文件&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;rm midea_ac_lan.zip&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;5.重动Home Assistant&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clash For Windows切换Clash.Meta内核</title>
+      <link>http://localhost:1313/blog/clash.meta/</link>
+      <pubDate>Mon, 09 Oct 2023 21:34:53 +0800</pubDate>
+      <guid>http://localhost:1313/blog/clash.meta/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Clash For Windows下载（根据自己的操作系统下载相应的版本）&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;下载地址&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Clash.Meta内核（根据自己的操作系统下载相应的版本）&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/MetaCubeX/Clash.Meta/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;下载地址&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;clash-for-windows切换meta内核&#34;&gt;Clash for windows切换Meta内核&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;MacOS端切换内核&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;打开Clash for windows报错，提示：已损坏，无法打开。 您应该将它移到废纸篓。&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo spctl --master-disable&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;若还是无法运行，输入以下命令（命令后面空格），然后在程序中找到报错的程序拖动到终端框中，回车&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo xattr -d com.apple.quarantine &#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;将Clash.Meta内核拖至以下目录并更名clash-darwin&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;M芯片路径&lt;/p&gt;&#xA;&lt;p&gt;/Applications/Clash for Windows.app/Contents/Resources/static/files/darwin/arm64/clash-darwin&lt;/p&gt;&#xA;&lt;p&gt;Intel芯片路径&lt;/p&gt;&#xA;&lt;p&gt;/应用程序/Clash for Windows.app/Contents/Resources/static/files/darwin/x64/clash-darwin&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;授权clash-darwin&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#输入以下命令（命令后面空格），clash-darwin拖动到终端框中&#xD;&#xA;chmod +x &#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Docker搭建Excalidraw画图工具</title>
+      <link>http://localhost:1313/blog/excalidraw/</link>
+      <pubDate>Mon, 14 Aug 2023 20:27:30 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excalidraw/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;1.创建配置文件&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##创建Excalidraw存放目录&#xD;&#xA;mkdir -p /root/docker_data/excalidraw&#xD;&#xA;cd /root/docker_data/excalidraw&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在 /root/docker_data/excalidraw 目录下新建 docker-compose.yml&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;version: &amp;#34;3&amp;#34;&#xD;&#xA;&#xD;&#xA;services:&#xD;&#xA;  excalidraw:&#xD;&#xA;    image: fanjunyang/jy-excalidraw # 默认使用latest的TAG，也就是我构建的最新镜像&#xD;&#xA;    healthcheck:&#xD;&#xA;      disable: true&#xD;&#xA;    ports:&#xD;&#xA;      - &amp;#34;8030:80&amp;#34;&#xD;&#xA;    environment:&#xD;&#xA;      BACKEND_V2_GET_URL: https://域名/excalidraw-storage-backend/api/v2/scenes/&#xD;&#xA;      BACKEND_V2_POST_URL: https://域名/excalidraw-storage-backend/api/v2/scenes/&#xD;&#xA;      LIBRARY_URL: https://libraries.excalidraw.com&#xD;&#xA;      LIBRARY_BACKEND: https://us-central1-excalidraw-room-persistence.cloudfunctions.net/libraries&#xD;&#xA;      SOCKET_SERVER_URL: https://域名/&#xD;&#xA;      STORAGE_BACKEND: &amp;#34;https&amp;#34; # 协议是 https&#xD;&#xA;      HTTP_STORAGE_BACKEND_URL: &amp;#34;https://域名/excalidraw-storage-backend/api/v2&amp;#34;&#xD;&#xA;&#xD;&#xA;  excalidraw-storage-backend:&#xD;&#xA;    image: kiliandeca/excalidraw-storage-backend&#xD;&#xA;    ports:&#xD;&#xA;      - &amp;#34;8031:8080&amp;#34;&#xD;&#xA;    environment:&#xD;&#xA;      STORAGE_URI: redis://redis:6379&#xD;&#xA;&#xD;&#xA;  excalidraw-room:&#xD;&#xA;    image: excalidraw/excalidraw-room&#xD;&#xA;    ports:&#xD;&#xA;      - &amp;#34;8032:80&amp;#34;&#xD;&#xA;&#xD;&#xA;  redis:&#xD;&#xA;    image: redis&#xD;&#xA;    ports:&#xD;&#xA;      - &amp;#34;6379:6379&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;2.运行yml文件&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##在/root/docker_data/excalidraw目录下，运行命令：&#xD;&#xA;docker-compose up -d&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;3.反向代理&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;反向代理域名指向http://127.0.0.1:8030&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FRP内网穿透</title>
+      <link>http://localhost:1313/blog/frp/</link>
+      <pubDate>Sat, 12 Aug 2023 21:24:13 +0800</pubDate>
+      <guid>http://localhost:1313/blog/frp/</guid>
+      <description>&lt;h2 id=&#34;frp服务端设置&#34;&gt;FRP服务端设置&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.FRP服务端一键安装&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/MvsCode/frps-onekey/master/install-frps.sh -O ./install-frps.sh&#xD;&#xA;chmod 700 ./install-frps.sh&#xD;&#xA;./install-frps.sh install&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;2.设置后台运行&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nohup ./frps -c frps.ini &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 &amp;amp;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;FRPS常用命令&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;开启FRPS：frps start&#xD;&#xA;停止FRPS：frps stop&#xD;&#xA;重启FRPS：frps restart&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;防火墙端口放行&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##Debian或Ubuntu系统放行端口：&#xD;&#xA;ufw allow 端口号&#xD;&#xA;##CentOS系统放行端口：&#xD;&#xA;firewall-cmd --zone=public --add-port=端口号/tcp --permanent&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;frp客户端设置&#34;&gt;FRP客户端设置&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.下载对应系统FRPC客户端&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/fatedier/frp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/fatedier/frp&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2.修改frpc.ini配置文件&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[common]&#xD;&#xA;server_addr = 服务器IP&#xD;&#xA;server_port = 8021&#xD;&#xA;token = xxxxxxxxxx&#xD;&#xA;&#xD;&#xA;[服务名称]&#xD;&#xA;type = tcp&#xD;&#xA;local_ip = 127.0.0.1&#xD;&#xA;local_port = 本地端口&#xD;&#xA;remote_port = 远程端口&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;3.启动配置文件&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./frpc -c ./frpc.ini&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>安装MacOS时进度条卡死的解决</title>
+      <link>http://localhost:1313/blog/install-macos-error/</link>
+      <pubDate>Thu, 10 Aug 2023 20:46:17 +0800</pubDate>
+      <guid>http://localhost:1313/blog/install-macos-error/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;MacOS安装进度条卡死解决方式:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;开机状态下断开电源线，同时按下option+command+r+p不要松开按键，经过5次重启后松开手指，再重新安装一遍，进度条将不会再卡死，&lt;/p&gt;&#xA;&lt;p&gt;安装完成进入系统后，风扇可能会一直狂转，解决方法如下:&lt;/p&gt;&#xA;&lt;p&gt;1.将Mac关机，按住Control+Option+Shift 7秒钟，然后在不松开按键情况下按住电源按键，Mac将会关机。&lt;/p&gt;&#xA;&lt;p&gt;2.继续按住全部四个按键7秒钟，然后松开这些按键。&lt;/p&gt;&#xA;&lt;p&gt;3.等待几秒钟，然后按下电源按钮以将Mac开机。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于MacOS下appname.app已损的解决</title>
+      <link>http://localhost:1313/blog/appname-app/</link>
+      <pubDate>Mon, 07 Aug 2023 12:18:41 +0800</pubDate>
+      <guid>http://localhost:1313/blog/appname-app/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;1.开启任何来源&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo spctl --master-disable&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;2.如以上方式无效,使用下面方法&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##打开Finder-应用程序-该app，将app图标拖至终端窗口&#xD;&#xA;sudo xattr -r -d com.apple.quarantine /Applications/appname.app&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>中国地区提高Github访问速度</title>
+      <link>http://localhost:1313/blog/switchhosts/</link>
+      <pubDate>Sat, 29 Jul 2023 20:23:00 +0800</pubDate>
+      <guid>http://localhost:1313/blog/switchhosts/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;1.下载、安装SwitchHosts&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/oldj/SwitchHosts/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;下载地址&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2.SwitchHosts设置&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;打开SwitchHosts，点击左上角&amp;quot;+&amp;quot; - 远程, Hosts标题自定义，URL输入https://raw.hellogithub.com/hosts 自动刷新1小时。&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##MacOS下刷新hosts文件&#xD;&#xA;sudo killall -HUP mDNSResponder&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Cloudflare自定义域名邮箱</title>
+      <link>http://localhost:1313/blog/cloudflare-mail/</link>
+      <pubDate>Thu, 27 Jul 2023 19:15:30 +0800</pubDate>
+      <guid>http://localhost:1313/blog/cloudflare-mail/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;1.Cloudflare设置&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;登录Cloudflare选择所需域名点击左侧电子邮件，选择添加记录并启用，在路由项目标地址处输入收发域名邮件的邮箱地址(gmail或hotmail均可)，自定义地址处输入自定义域名邮箱。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2.Gmail设置&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;登录&lt;a href=&#34;https://myaccount.google.com/apppasswords&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google应用专用密码&lt;/a&gt;&#xD;&#xA;页面，选择:邮件-其他，输入应用自定义密码,选择生成。&lt;/p&gt;&#xA;&lt;p&gt;进入Gmail-设置-查看所有设置-账号和导入-添加其他电子邮件地址，名称随意，电子邮件地址 处输入域名邮箱地址,SMTP服务器为smtp.gmail.com，端口587，用户名为gmail账号(去掉@gmail.com),密码为上面生成的自定义密码，点击添加账号，回到邮箱获取验证码进行验证，至此域名邮箱设置完成，在Gmail中即可用自定义域名邮件账号收发电子邮件。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nginx Proxy Manager安装</title>
+      <link>http://localhost:1313/blog/nginx_proxy_manager/</link>
+      <pubDate>Thu, 13 Jul 2023 22:38:57 +0800</pubDate>
+      <guid>http://localhost:1313/blog/nginx_proxy_manager/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;1.安装Docker和Docker-Compose&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.docker.com/get-docker/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker安装文档&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.docker.com/compose/install/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker-Compose安装文档&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2.配置Nginx Proxy Manager安装文件&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##新建应用存放目录&#xD;&#xA;mkdir -p docker/data/nginx_proxy_manager&#xD;&#xA;##进入该目录&#xD;&#xA;cd docker/data/nginx_proxy_manager&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;创建docker-compose.yml 粘贴以下配置信息，如报错，version: &amp;lsquo;3.8&amp;rsquo;改成&#39;3.3&amp;rsquo;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;version: &amp;#39;3.8&amp;#39;&#xD;&#xA;services:&#xD;&#xA;  app:&#xD;&#xA;    image: &amp;#39;jc21/nginx-proxy-manager:latest&amp;#39;&#xD;&#xA;    restart: unless-stopped&#xD;&#xA;    ports:&#xD;&#xA;      # These ports are in format &amp;lt;host-port&amp;gt;:&amp;lt;container-port&amp;gt;&#xD;&#xA;      - &amp;#39;80:80&amp;#39; # Public HTTP Port&#xD;&#xA;      - &amp;#39;443:443&amp;#39; # Public HTTPS Port&#xD;&#xA;      - &amp;#39;81:81&amp;#39; # Admin Web Port&#xD;&#xA;      # Add any other Stream port you want to expose&#xD;&#xA;      # - &amp;#39;21:21&amp;#39; # FTP&#xD;&#xA;&#xD;&#xA;    # Uncomment the next line if you uncomment anything in the section&#xD;&#xA;    # environment:&#xD;&#xA;      # Uncomment this if you want to change the location of&#xD;&#xA;      # the SQLite DB file within the container&#xD;&#xA;      # DB_SQLITE_FILE: &amp;#34;/data/database.sqlite&amp;#34;&#xD;&#xA;&#xD;&#xA;      # Uncomment this if IPv6 is not enabled on your host&#xD;&#xA;      # DISABLE_IPV6: &amp;#39;true&amp;#39;&#xD;&#xA;&#xD;&#xA;    volumes:&#xD;&#xA;      - ./data:/data&#xD;&#xA;      - ./letsencrypt:/etc/letsencrypt&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;3.安装/运行Nginx Proxy Manager&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker可视化面板Portainer安装</title>
+      <link>http://localhost:1313/blog/portainer/</link>
+      <pubDate>Thu, 13 Jul 2023 22:37:48 +0800</pubDate>
+      <guid>http://localhost:1313/blog/portainer/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##拉取Portainer镜像&#xD;&#xA;docker pull portainer/portainer&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##查看镜像&#xD;&#xA;docker images&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##安装Portainer镜像,Web端口为9000&#xD;&#xA;docker run -d -p 9000:9000 --name=sun_portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##Portainer界面地址&#xD;&#xA;http://127.0.0.1:9000&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>X-Ui安装</title>
+      <link>http://localhost:1313/blog/x-ui/</link>
+      <pubDate>Thu, 13 Jul 2023 22:36:26 +0800</pubDate>
+      <guid>http://localhost:1313/blog/x-ui/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;aaPanel安装脚本&lt;/strong&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.aapanel.com/new/download.html#install&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;点击&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;X-ui一键脚本&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bash &amp;lt;(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##Debian/Ubuntu 系统执行以下命令：&#xD;&#xA;apt update -y&#xD;&#xA;apt install -y curl&#xD;&#xA;apt install -y socat&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##CentOS 系统执行以下命令：&#xD;&#xA;yum update -y&#xD;&#xA;yum install -y curl&#xD;&#xA;yum install -y socat&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##放行端口&#xD;&#xA;iptables -I INPUT -p tcp --dport 443 -j ACCEPT&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Github图床项目PicGo</title>
+      <link>http://localhost:1313/blog/picgo/</link>
+      <pubDate>Thu, 13 Jul 2023 22:34:23 +0800</pubDate>
+      <guid>http://localhost:1313/blog/picgo/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;1.下载/安装系统对应PicGo客户端&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Molunerfinn/PicGo/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;点击&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2.运行PicGo 点击插件设置 搜索github-plus 安装&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;打开githubPlus设置&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;##token获取：登陆&lt;a href=&#34;https://github.com/login&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;&#xD;&#xA; Settings-Developer settings-Tokens(classic)-New Github APP&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;图床配置名:        随意&lt;/li&gt;&#xA;&lt;li&gt;repo:          github账号/项目名称&lt;/li&gt;&#xA;&lt;li&gt;branch:         main&lt;/li&gt;&#xA;&lt;li&gt;token:         github中生成&lt;/li&gt;&#xA;&lt;li&gt;path:          图片上传目录,可留空&lt;/li&gt;&#xA;&lt;li&gt;customUrl:       https://cdn.jsdelivr.net/gh/github账号/项目名称&lt;/li&gt;&#xA;&lt;li&gt;origin:         github&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Hogo技术文档</title>
+      <link>http://localhost:1313/blog/hugo/</link>
+      <pubDate>Thu, 13 Jul 2023 21:19:28 +0800</pubDate>
+      <guid>http://localhost:1313/blog/hugo/</guid>
+      <description>&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hugo01&#34;&gt;MacOS搭建Hugo进行Github托管&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hugo02&#34;&gt;Windows搭建Hugo&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hugo03&#34;&gt;在Hugo中嵌入视频&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hugo04&#34;&gt;Markdown超链接在新窗口中打开&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hugo05&#34;&gt;Hugo中调整Markdown字体大小&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#hugo06&#34;&gt;在Hugo中锚点跳转的应用&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;a id=&#34;hugo01&#34;&gt;&lt;/a&gt;&#xA;&lt;h2 id=&#34;macos搭建hugo进行github托管&#34;&gt;MacOS搭建Hugo进行Github托管&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.搭建环境&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;MacOS下需要安装Homebrew，其它操作系统访问&lt;a href=&#34;https://gohugo.io/installation/&#34; title=&#34;Title&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gohugo.io/installation&lt;/a&gt;&#xD;&#xA; 查询安装文档。&lt;/p&gt;&#xA;&lt;p&gt;安装Homebrew&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##安装时如弹出443错误,则需将终端配置网络代理&#xA;/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##终端代理配置格式&#xA;export https_proxy=http://127.0.0.1:7890&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;安装hugo并进行配置&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##安装Hugo&#xA;brew install hugo&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##创建blog&#xA;hugo new site blog&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##初始化仓库&#xA;git init&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##下载主题,也可访问https://themes.gohugo.io/ 获取其它主题&#xA;git submodule add https://github.com/jinyekey/hugo-y.git themes/hugo-y&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;使用VScode打开创建的blog文件夹，找到hogo.toml 设置主题&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;baseURL = &amp;#39;设置域名&amp;#39;&#xA;languageCode = &amp;#39;en-us&amp;#39;&#xA;title = &amp;#39;y Site&amp;#39;&#xA;theme = &amp;#39;hugo-y&amp;#39;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行hogo&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##网站预览地址http://127.0.0.1:1313&#xA;hugo server -D&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;创建文章&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new blog/test.md&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;2.托管到Github&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;登陆Github-创建新存储库，存储库中点击Settings-Pages, Source项选择GitHub Actions点击browse all workflows 找到Hugo点击Configure，再点击Commit changes&amp;hellip;提交更改。&lt;/p&gt;&#xA;&lt;p&gt;使用Github Desktop将本地blog文件夹push到存储库&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

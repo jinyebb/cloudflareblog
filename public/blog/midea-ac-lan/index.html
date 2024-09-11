@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HACS无法安装midea ac lan的解决方法 | Welcome !</title>
+<meta name="title" content="HACS无法安装midea ac lan的解决方法" />
+<meta name="description" content="1.导航到/homeassistant/custom_components目录
+cd /homeassistant/custom_components
+2.从Releases页面下载midea_ac_lan.zip
+wget https://github.com/georgezhao2010/midea_ac_lan/releases/download/v0.3.22/midea_ac_lan.zip -O midea_ac_lan.zip
+3.解压缩midea_ac_lan.zip
+unzip -d ./midea_ac_lan/ midea_ac_lan.zip
+4.清理下载的midea_ac_lan.zip文件
+rm midea_ac_lan.zip
+5.重动Home Assistant" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="http://localhost:1313/blog/midea-ac-lan/">
+  <meta property="og:site_name" content="Welcome !">
+  <meta property="og:title" content="HACS无法安装midea ac lan的解决方法">
+  <meta property="og:description" content="1.导航到/homeassistant/custom_components目录
+cd /homeassistant/custom_components 2.从Releases页面下载midea_ac_lan.zip
+wget https://github.com/georgezhao2010/midea_ac_lan/releases/download/v0.3.22/midea_ac_lan.zip -O midea_ac_lan.zip 3.解压缩midea_ac_lan.zip
+unzip -d ./midea_ac_lan/ midea_ac_lan.zip 4.清理下载的midea_ac_lan.zip文件
+rm midea_ac_lan.zip 5.重动Home Assistant">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-09-11T20:16:16+08:00">
+    <meta property="article:modified_time" content="2024-09-11T20:16:16+08:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HACS无法安装midea ac lan的解决方法">
+  <meta name="twitter:description" content="1.导航到/homeassistant/custom_components目录
+cd /homeassistant/custom_components 2.从Releases页面下载midea_ac_lan.zip
+wget https://github.com/georgezhao2010/midea_ac_lan/releases/download/v0.3.22/midea_ac_lan.zip -O midea_ac_lan.zip 3.解压缩midea_ac_lan.zip
+unzip -d ./midea_ac_lan/ midea_ac_lan.zip 4.清理下载的midea_ac_lan.zip文件
+rm midea_ac_lan.zip 5.重动Home Assistant">
+
+
+
+
+  <meta itemprop="name" content="HACS无法安装midea ac lan的解决方法">
+  <meta itemprop="description" content="1.导航到/homeassistant/custom_components目录
+cd /homeassistant/custom_components 2.从Releases页面下载midea_ac_lan.zip
+wget https://github.com/georgezhao2010/midea_ac_lan/releases/download/v0.3.22/midea_ac_lan.zip -O midea_ac_lan.zip 3.解压缩midea_ac_lan.zip
+unzip -d ./midea_ac_lan/ midea_ac_lan.zip 4.清理下载的midea_ac_lan.zip文件
+rm midea_ac_lan.zip 5.重动Home Assistant">
+  <meta itemprop="datePublished" content="2024-09-11T20:16:16+08:00">
+  <meta itemprop="dateModified" content="2024-09-11T20:16:16+08:00">
+  <meta itemprop="wordCount" content="18">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Welcome !</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/warning/">Warning</a>
+
+<a href="/recover/">Recover</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>HACS无法安装midea ac lan的解决方法</h1>
+<p>
+  <i>
+    <time datetime='2024-09-11' pubdate>
+      11 Sep, 2024
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>1.导航到/homeassistant/custom_components目录</p>
+<pre tabindex="0"><code>cd /homeassistant/custom_components
+</code></pre><p>2.从Releases页面下载midea_ac_lan.zip</p>
+<pre tabindex="0"><code>wget https://github.com/georgezhao2010/midea_ac_lan/releases/download/v0.3.22/midea_ac_lan.zip -O midea_ac_lan.zip
+</code></pre><p>3.解压缩midea_ac_lan.zip</p>
+<pre tabindex="0"><code>unzip -d ./midea_ac_lan/ midea_ac_lan.zip
+</code></pre><p>4.清理下载的midea_ac_lan.zip文件</p>
+<pre tabindex="0"><code>rm midea_ac_lan.zip
+</code></pre><p>5.重动Home Assistant</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>By <a href="https://y.jinye.org/">/ᐠ｡ꞈ｡ᐟ\ Don't die before you're dead</a>
+</footer>
+
+    
+</body>
+
+</html>

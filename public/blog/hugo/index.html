@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hogo技术文档 | Welcome !</title>
+<meta name="title" content="Hogo技术文档" />
+<meta name="description" content="目录
+
+MacOS搭建Hugo进行Github托管
+
+Windows搭建Hugo
+
+在Hugo中嵌入视频
+
+Markdown超链接在新窗口中打开
+
+Hugo中调整Markdown字体大小
+
+在Hugo中锚点跳转的应用
+
+
+
+
+MacOS搭建Hugo进行Github托管
+1.搭建环境
+MacOS下需要安装Homebrew，其它操作系统访问https://gohugo.io/installation
+ 查询安装文档。
+安装Homebrew
+##安装时如弹出443错误,则需将终端配置网络代理
+/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
+##终端代理配置格式
+export https_proxy=http://127.0.0.1:7890
+安装hugo并进行配置
+##安装Hugo
+brew install hugo
+##创建blog
+hugo new site blog
+##初始化仓库
+git init
+##下载主题,也可访问https://themes.gohugo.io/ 获取其它主题
+git submodule add https://github.com/jinyekey/hugo-y.git themes/hugo-y
+使用VScode打开创建的blog文件夹，找到hogo.toml 设置主题
+baseURL = &#39;设置域名&#39;
+languageCode = &#39;en-us&#39;
+title = &#39;y Site&#39;
+theme = &#39;hugo-y&#39;
+运行hogo
+##网站预览地址http://127.0.0.1:1313
+hugo server -D
+创建文章
+hugo new blog/test.md
+2.托管到Github
+登陆Github-创建新存储库，存储库中点击Settings-Pages, Source项选择GitHub Actions点击browse all workflows 找到Hugo点击Configure，再点击Commit changes&hellip;提交更改。
+使用Github Desktop将本地blog文件夹push到存储库" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="http://localhost:1313/blog/hugo/">
+  <meta property="og:site_name" content="Welcome !">
+  <meta property="og:title" content="Hogo技术文档">
+  <meta property="og:description" content="目录 MacOS搭建Hugo进行Github托管Windows搭建Hugo在Hugo中嵌入视频Markdown超链接在新窗口中打开Hugo中调整Markdown字体大小在Hugo中锚点跳转的应用MacOS搭建Hugo进行Github托管 1.搭建环境
+MacOS下需要安装Homebrew，其它操作系统访问https://gohugo.io/installation查询安装文档。
+安装Homebrew
+##安装时如弹出443错误,则需将终端配置网络代理 /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; ##终端代理配置格式 export https_proxy=http://127.0.0.1:7890 安装hugo并进行配置
+##安装Hugo brew install hugo ##创建blog hugo new site blog ##初始化仓库 git init ##下载主题,也可访问https://themes.gohugo.io/ 获取其它主题 git submodule add https://github.com/jinyekey/hugo-y.git themes/hugo-y 使用VScode打开创建的blog文件夹，找到hogo.toml 设置主题
+baseURL = &#39;设置域名&#39; languageCode = &#39;en-us&#39; title = &#39;y Site&#39; theme = &#39;hugo-y&#39; 运行hogo
+##网站预览地址http://127.0.0.1:1313 hugo server -D 创建文章
+hugo new blog/test.md 2.托管到Github
+登陆Github-创建新存储库，存储库中点击Settings-Pages, Source项选择GitHub Actions点击browse all workflows 找到Hugo点击Configure，再点击Commit changes…提交更改。
+使用Github Desktop将本地blog文件夹push到存储库">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-07-13T21:19:28+08:00">
+    <meta property="article:modified_time" content="2023-07-13T21:19:28+08:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hogo技术文档">
+  <meta name="twitter:description" content="目录 MacOS搭建Hugo进行Github托管Windows搭建Hugo在Hugo中嵌入视频Markdown超链接在新窗口中打开Hugo中调整Markdown字体大小在Hugo中锚点跳转的应用MacOS搭建Hugo进行Github托管 1.搭建环境
+MacOS下需要安装Homebrew，其它操作系统访问https://gohugo.io/installation查询安装文档。
+安装Homebrew
+##安装时如弹出443错误,则需将终端配置网络代理 /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; ##终端代理配置格式 export https_proxy=http://127.0.0.1:7890 安装hugo并进行配置
+##安装Hugo brew install hugo ##创建blog hugo new site blog ##初始化仓库 git init ##下载主题,也可访问https://themes.gohugo.io/ 获取其它主题 git submodule add https://github.com/jinyekey/hugo-y.git themes/hugo-y 使用VScode打开创建的blog文件夹，找到hogo.toml 设置主题
+baseURL = &#39;设置域名&#39; languageCode = &#39;en-us&#39; title = &#39;y Site&#39; theme = &#39;hugo-y&#39; 运行hogo
+##网站预览地址http://127.0.0.1:1313 hugo server -D 创建文章
+hugo new blog/test.md 2.托管到Github
+登陆Github-创建新存储库，存储库中点击Settings-Pages, Source项选择GitHub Actions点击browse all workflows 找到Hugo点击Configure，再点击Commit changes…提交更改。
+使用Github Desktop将本地blog文件夹push到存储库">
+
+
+
+
+  <meta itemprop="name" content="Hogo技术文档">
+  <meta itemprop="description" content="目录 MacOS搭建Hugo进行Github托管Windows搭建Hugo在Hugo中嵌入视频Markdown超链接在新窗口中打开Hugo中调整Markdown字体大小在Hugo中锚点跳转的应用MacOS搭建Hugo进行Github托管 1.搭建环境
+MacOS下需要安装Homebrew，其它操作系统访问https://gohugo.io/installation查询安装文档。
+安装Homebrew
+##安装时如弹出443错误,则需将终端配置网络代理 /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; ##终端代理配置格式 export https_proxy=http://127.0.0.1:7890 安装hugo并进行配置
+##安装Hugo brew install hugo ##创建blog hugo new site blog ##初始化仓库 git init ##下载主题,也可访问https://themes.gohugo.io/ 获取其它主题 git submodule add https://github.com/jinyekey/hugo-y.git themes/hugo-y 使用VScode打开创建的blog文件夹，找到hogo.toml 设置主题
+baseURL = &#39;设置域名&#39; languageCode = &#39;en-us&#39; title = &#39;y Site&#39; theme = &#39;hugo-y&#39; 运行hogo
+##网站预览地址http://127.0.0.1:1313 hugo server -D 创建文章
+hugo new blog/test.md 2.托管到Github
+登陆Github-创建新存储库，存储库中点击Settings-Pages, Source项选择GitHub Actions点击browse all workflows 找到Hugo点击Configure，再点击Commit changes…提交更改。
+使用Github Desktop将本地blog文件夹push到存储库">
+  <meta itemprop="datePublished" content="2023-07-13T21:19:28+08:00">
+  <meta itemprop="dateModified" content="2023-07-13T21:19:28+08:00">
+  <meta itemprop="wordCount" content="416">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Welcome !</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/warning/">Warning</a>
+
+<a href="/recover/">Recover</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Hogo技术文档</h1>
+<p>
+  <i>
+    <time datetime='2023-07-13' pubdate>
+      13 Jul, 2023
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="目录">目录</h2>
+<ul>
+<li><a href="#hugo01">MacOS搭建Hugo进行Github托管</a>
+</li>
+<li><a href="#hugo02">Windows搭建Hugo</a>
+</li>
+<li><a href="#hugo03">在Hugo中嵌入视频</a>
+</li>
+<li><a href="#hugo04">Markdown超链接在新窗口中打开</a>
+</li>
+<li><a href="#hugo05">Hugo中调整Markdown字体大小</a>
+</li>
+<li><a href="#hugo06">在Hugo中锚点跳转的应用</a>
+</li>
+</ul>
+<hr>
+<a id="hugo01"></a>
+<h2 id="macos搭建hugo进行github托管">MacOS搭建Hugo进行Github托管</h2>
+<p><strong>1.搭建环境</strong></p>
+<p>MacOS下需要安装Homebrew，其它操作系统访问<a href="https://gohugo.io/installation/" title="Title" target="_blank" rel="noopener">https://gohugo.io/installation</a>
+ 查询安装文档。</p>
+<p>安装Homebrew</p>
+<pre tabindex="0"><code>##安装时如弹出443错误,则需将终端配置网络代理
+/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
+</code></pre><pre tabindex="0"><code>##终端代理配置格式
+export https_proxy=http://127.0.0.1:7890
+</code></pre><p>安装hugo并进行配置</p>
+<pre tabindex="0"><code>##安装Hugo
+brew install hugo
+</code></pre><pre tabindex="0"><code>##创建blog
+hugo new site blog
+</code></pre><pre tabindex="0"><code>##初始化仓库
+git init
+</code></pre><pre tabindex="0"><code>##下载主题,也可访问https://themes.gohugo.io/ 获取其它主题
+git submodule add https://github.com/jinyekey/hugo-y.git themes/hugo-y
+</code></pre><p>使用VScode打开创建的blog文件夹，找到hogo.toml 设置主题</p>
+<pre tabindex="0"><code>baseURL = &#39;设置域名&#39;
+languageCode = &#39;en-us&#39;
+title = &#39;y Site&#39;
+theme = &#39;hugo-y&#39;
+</code></pre><p>运行hogo</p>
+<pre tabindex="0"><code>##网站预览地址http://127.0.0.1:1313
+hugo server -D
+</code></pre><p>创建文章</p>
+<pre tabindex="0"><code>hugo new blog/test.md
+</code></pre><p><strong>2.托管到Github</strong></p>
+<p>登陆Github-创建新存储库，存储库中点击Settings-Pages, Source项选择GitHub Actions点击browse all workflows 找到Hugo点击Configure，再点击Commit changes&hellip;提交更改。</p>
+<p>使用Github Desktop将本地blog文件夹push到存储库</p>
+<p><a href="https://desktop.github.com/" title="Title" target="_blank" rel="noopener">Github Desktop下载</a>
+</p>
+<p>使用Github Pages提供的二级域名便可访问托管在Github上的Hogo网站</p>
+<p><strong>3.托管到Cloudflare Pages</strong></p>
+<p>登陆Cloudflare点击Workers和Pages，创建应用程序-Pages-连接到Git，选择之前创建的Github存储库-开始设置。</p>
+<p>在 Pages 项目 &gt;设置&gt;环境变量中创建环境变量。将值设置为当前使用的Hugo版本。</p>
+<pre tabindex="0"><code>##查看当前Hugo版本
+hugo version
+</code></pre><p>设置环境变量</p>
+<ul>
+<li>变量名称:       HUGO_VERSION</li>
+<li>值:          0.115.1</li>
+</ul>
+<hr>
+<a id="hugo02"></a>
+<h3 id="windows搭建hugo">Windows搭建Hugo</h3>
+<p>1.下载Hugo:<br>
+<a href="https://github.com/gohugoio/hugo/releases" title="Title" target="_blank" rel="noopener">访问Hugo的GitHub发布页面</a>
+</p>
+<p>2.解压:<br>
+下载的 .zip 文件，得到一个 hugo.exe 文件</p>
+<p>3.配置环境变量:</p>
+<ul>
+<li>将 hugo.exe 文件移动到你希望放置的目录（例如 D:\hugo）。</li>
+<li>右键点击“此电脑”或“计算机”，选择“属性”。</li>
+<li>选择“高级系统设置”，然后点击“环境变量”。</li>
+<li>在系统变量部分，找到“Path”变量，选择“编辑”。</li>
+<li>点击“新建”，然后添加 Hugo 的路径（例如 D:\hugo）。</li>
+<li>点击“确定”保存更改。</li>
+</ul>
+<p>4.验证安装:</p>
+<ul>
+<li>打开命令提示符（CMD）或 PowerShell。</li>
+<li>输入 hugo version，如果显示版本信息，说明安装成功。</li>
+</ul>
+<p>5.创建Hugo站点<br>
+在命令提示符或 PowerShell 中，导航到你想要创建站点的目录。</p>
+<pre tabindex="0"><code>cd D:\hugo
+hugo new site my-site
+</code></pre><p>my-site 是你站点的名称。</p>
+<p>6.选择主题:</p>
+<ul>
+<li>访问 <a href="https://github.com/gohugoio/hugo/releases" title="Title" target="_blank" rel="noopener">Hugo Themes</a>
+，选择一个你喜欢的主题。</li>
+<li>根据主题的文档，将其克隆或下载到你的站点的 themes 目录下。例如：</li>
+</ul>
+<pre tabindex="0"><code>cd D:\hugo
+git clone https://github.com/theocean/beautiful-hugo.git themes/beautiful-hugo
+</code></pre><p>7.配置站点:</p>
+<ul>
+<li>打开 config.toml 文件（在 my-site 目录下）。</li>
+<li>按照主题的说明配置 config.toml 文件，设置站点标题、描述、主题等。</li>
+</ul>
+<p>8.创建内容:</p>
+<pre tabindex="0"><code>cd D:\hugo
+hugo new posts/my-first-post.md
+</code></pre><p>9.启动本地服务器:<br>
+在 my-site 目录下，使用 hugo server 命令启动本地开发服务器。</p>
+<pre tabindex="0"><code>hugo server
+</code></pre><p>打开浏览器，访问 http://localhost:1313，可以查看你的站点预览效果。</p>
+<hr>
+<a id="hugo03"></a>
+<h2 id="在hugo中嵌入视频">在Hugo中嵌入视频</h2>
+<p><strong>1.在 /layouts/shortcodes/ 目录下创建youtube.html 并粘贴以下代码</strong></p>
+<pre tabindex="0"><code>&lt;div class=&#34;embed video-player&#34;&gt;
+  &lt;iframe 
+          class=&#34;youtube-player&#34; 
+          type=&#34;text/html&#34; 
+          width=&#34;640&#34; 
+          height=&#34;385&#34;
+          src=&#34;https://www.youtube.com/embed/{{ index .Params 0 }}?autoplay=1&#34;
+          style=&#34;
+                 position: absolute; 
+                 top: 0; 
+                 left: 0; 
+                 width: 100%; 
+                 height: 100%; 
+                 border:0;&#34;
+          allowfullscreen frameborder=&#34;0&#34;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre><p><strong>2.创建一个markdown 嵌入youtube视频参数为：</strong></p>
+<pre tabindex="0"><code>##xxx为youtube视频链接watch?v=后面的数值
+##编辑时将@删除
+{@{&lt; youtube xxx &gt;}}
+
+##自动播放
+{@{&lt; youtube id=&#34;xxx&#34; autoplay=&#34;true&#34; &gt;}}
+</code></pre><p><strong>效果:</strong>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eIzqQJqyZr4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+</p>
+<h3 id="嵌入bilibili视频">嵌入Bilibili视频</h3>
+<p><strong>1.在 /layouts/shortcodes/ 目录下创建bilibili.html 并粘贴以下代码</strong></p>
+<pre tabindex="0"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+  &lt;head&gt;
+    &lt;!-- style 样式 是为了让网页上的视频框按比例显示而非固定的大小 --&gt;
+    &lt;style type=&#34;text/css&#34;&gt;
+      .aspect-ratio {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%;
+      }
+
+      .aspect-ratio iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div class=&#34;aspect-ratio&#34;&gt;
+      &lt;iframe
+              src=&#34;https://player.bilibili.com/player.html?bvid={{.Get 0 }}&amp;page={{ if .Get 1 }}{{.Get 1}}{{ else }}1&amp;high_quality=1&amp;danmaku=0{{end}}&#34;
+              scrolling=&#34;no&#34; 
+              border=&#34;0&#34; 
+              frameborder=&#34;no&#34; 
+              framespacing=&#34;0&#34; 
+              allowfullscreen=&#34;true&#34;
+              sandbox=&#34;allow-top-navigation allow-same-origin allow-forms allow-scripts&#34;
+              &gt;
+      &lt;/iframe&gt;
+      &lt;!-- src 中的 &amp;high_quality=1&amp;danmaku=0 设定了高清程度并默认屏蔽弹幕 --&gt;
+      &lt;!-- sandbox 阻止了点击视频中的按钮跳转到B站的行为 --&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre><p><strong>2.创建一个markdown 嵌入bilibili视频参数为：</strong></p>
+<pre tabindex="0"><code>##xxx为bilibili视频链接video/后的数值
+##编辑时将@删除
+{@{&lt; bilibili xxx &gt;}} 
+
+##指定集数
+{@{&lt; bilibili xxx 8 &gt;}}
+</code></pre><p><strong>效果:</strong>
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    
+    <style type="text/css">
+      .aspect-ratio {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%;
+      }
+
+      .aspect-ratio iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="aspect-ratio">
+      <iframe
+              src="https://player.bilibili.com/player.html?bvid=BV13t411S77V&page=1&high_quality=1&danmaku=0"
+              scrolling="no" 
+              border="0" 
+              frameborder="no" 
+              framespacing="0" 
+              allowfullscreen="true"
+              sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"
+              >
+      </iframe>
+      
+      
+    </div>
+  </body>
+
+</html></p>
+<hr>
+<a id="hugo04"></a>
+<h2 id="markdown超链接在新窗口中打开">Markdown超链接在新窗口中打开</h2>
+<p><strong>新建目录layouts/_default/_markup/ 并创建render-link.html</strong></p>
+<p><em><strong>##粘贴以下参数</strong></em></p>
+<pre tabindex="0"><code>&lt;a href=&#34;{{ .Destination | safeURL }}&#34;{{ with .Title}} title=&#34;{{ . }}&#34;{{ end }}{{ if strings.HasPrefix .Destination &#34;http&#34; }} target=&#34;_blank&#34; rel=&#34;noopener&#34;{{ end }}&gt;{{ .Text | safeHTML }}&lt;/a&gt;
+</code></pre><pre tabindex="0"><code>[链接](https://www.github.com &#34;Title&#34;)
+</code></pre><hr>
+<a id="hugo05"></a>
+<h2 id="hugo中调整markdown字体大小">Hugo中调整Markdown字体大小</h2>
+<p>在 layouts/shortcodes 目录下创建一个名为 fontsize.html 的文件，内容如下：</p>
+<pre tabindex="0"><code>&lt;span style=&#34;font-size: {{ .Get &#34;size&#34; }};&#34;&gt;{{ .Inner }}&lt;/span&gt;
+</code></pre><p>然后在Markdown中这样使用：</p>
+<pre tabindex="0"><code>##编辑时将@删除
+{@{&lt; fontsize size=&#34;20px&#34; &gt;}}这是20像素的文本。{@{&lt; /fontsize &gt;}}
+</code></pre><hr>
+<a id="hugo06"></a>
+<h2 id="在hugo中锚点跳转的应用">在Hugo中锚点跳转的应用</h2>
+<p>Hugo常规的锚点跳转Markdown语法为：</p>
+<ol>
+<li></li>
+</ol>
+<pre tabindex="0"><code># 目录
+* [目录一](#标题)
+</code></pre><ol start="2">
+<li></li>
+</ol>
+<pre tabindex="0"><code>## 标题
+//跳转目的地
+</code></pre><p>而锚点跳转到页面指定位置，并非某段文章标题时，可以使用Hugo Shortcodes，操作如下：</p>
+<p><em><strong>1.创建Shortcode文件</strong></em></p>
+<p>Hugo项目的根目录下，找到或创建一个layouts/shortcodes 目录。</p>
+<p><em><strong>2.编辑Shortcode文件</strong></em></p>
+<p>编辑或创建anchor.html文件，并添加如下内容：</p>
+<pre tabindex="0"><code>&lt;a id=&#34;{{ .Get &#34;id&#34; }}&#34;&gt;&lt;/a&gt;
+</code></pre><p>Shortcode会生成一个带有指定ID的锚点</p>
+<p><em><strong>3.在Markdown文件中插入Shortcode</strong></em></p>
+<p>在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：</p>
+<pre tabindex="0"><code>##编辑时将@删除
+{@{&lt; anchor id=&#34;display&#34; &gt;}@}
+</code></pre><p>这行代码会在生成的HTML中插入一个带有ID:display的锚点。</p>
+<p><em><strong>4.链接到锚点</strong></em></p>
+<p>在Markdown文件中的其他位置创建链接，指向这个锚点：</p>
+<pre tabindex="0"><code>[跳转到锚点](#display)
+</code></pre><p><em><strong>5.完整示例</strong></em></p>
+<pre tabindex="0"><code>## 目录
+
+- [跳转到锚点](#display)
+
+## 显示部分
+
+<a id="display"></a>
+这里是显示部分的内容。
+</code></pre>
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>By <a href="https://y.jinye.org/">/ᐠ｡ꞈ｡ᐟ\ Don't die before you're dead</a>
+</footer>
+
+    
+</body>
+
+</html>

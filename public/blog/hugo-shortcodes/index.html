@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>在Hugo中锚点跳转的应用 | Welcome !</title>
+<meta name="title" content="在Hugo中锚点跳转的应用" />
+<meta name="description" content="Hugo常规的锚点跳转Markdown语法为：
+
+
+
+# 目录
+* [目录一](#标题)
+
+
+
+## 标题
+//跳转目的地
+而锚点跳转到页面指定位置，并非某段文章标题时，可以使用Hugo Shortcodes，操作如下：
+1.创建Shortcode文件
+Hugo项目的根目录下，找到或创建一个layouts/shortcodes 目录。
+2.编辑Shortcode文件
+编辑或创建anchor.html文件，并添加如下内容：
+&lt;a id=&#34;{{ .Get &#34;id&#34; }}&#34;&gt;&lt;/a&gt;
+Shortcode会生成一个带有指定ID的锚点
+3.在Markdown文件中插入Shortcode
+在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：
+
+这行代码会在生成的HTML中插入一个带有ID:display的锚点。
+4.链接到锚点
+在Markdown文件中的其他位置创建链接，指向这个锚点：
+[跳转到锚点](#display)
+5.完整示例
+## 目录
+
+- [跳转到锚点](#display)
+
+## 显示部分
+
+
+这里是显示部分的内容。
+" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="http://localhost:1313/blog/hugo-shortcodes/">
+  <meta property="og:site_name" content="Welcome !">
+  <meta property="og:title" content="在Hugo中锚点跳转的应用">
+  <meta property="og:description" content="Hugo常规的锚点跳转Markdown语法为：
+# 目录 * [目录一](#标题) ## 标题 //跳转目的地 而锚点跳转到页面指定位置，并非某段文章标题时，可以使用Hugo Shortcodes，操作如下：
+1.创建Shortcode文件
+Hugo项目的根目录下，找到或创建一个layouts/shortcodes 目录。
+2.编辑Shortcode文件
+编辑或创建anchor.html文件，并添加如下内容：
+&lt;a id=&#34;{{ .Get &#34;id&#34; }}&#34;&gt;&lt;/a&gt; Shortcode会生成一个带有指定ID的锚点
+3.在Markdown文件中插入Shortcode
+在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：
+这行代码会在生成的HTML中插入一个带有ID:display的锚点。
+4.链接到锚点
+在Markdown文件中的其他位置创建链接，指向这个锚点：
+[跳转到锚点](#display) 5.完整示例
+## 目录 - [跳转到锚点](#display) ## 显示部分 这里是显示部分的内容。 ">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-09-08T18:10:00+08:00">
+    <meta property="article:modified_time" content="2024-09-08T18:10:00+08:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="在Hugo中锚点跳转的应用">
+  <meta name="twitter:description" content="Hugo常规的锚点跳转Markdown语法为：
+# 目录 * [目录一](#标题) ## 标题 //跳转目的地 而锚点跳转到页面指定位置，并非某段文章标题时，可以使用Hugo Shortcodes，操作如下：
+1.创建Shortcode文件
+Hugo项目的根目录下，找到或创建一个layouts/shortcodes 目录。
+2.编辑Shortcode文件
+编辑或创建anchor.html文件，并添加如下内容：
+&lt;a id=&#34;{{ .Get &#34;id&#34; }}&#34;&gt;&lt;/a&gt; Shortcode会生成一个带有指定ID的锚点
+3.在Markdown文件中插入Shortcode
+在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：
+这行代码会在生成的HTML中插入一个带有ID:display的锚点。
+4.链接到锚点
+在Markdown文件中的其他位置创建链接，指向这个锚点：
+[跳转到锚点](#display) 5.完整示例
+## 目录 - [跳转到锚点](#display) ## 显示部分 这里是显示部分的内容。 ">
+
+
+
+
+  <meta itemprop="name" content="在Hugo中锚点跳转的应用">
+  <meta itemprop="description" content="Hugo常规的锚点跳转Markdown语法为：
+# 目录 * [目录一](#标题) ## 标题 //跳转目的地 而锚点跳转到页面指定位置，并非某段文章标题时，可以使用Hugo Shortcodes，操作如下：
+1.创建Shortcode文件
+Hugo项目的根目录下，找到或创建一个layouts/shortcodes 目录。
+2.编辑Shortcode文件
+编辑或创建anchor.html文件，并添加如下内容：
+&lt;a id=&#34;{{ .Get &#34;id&#34; }}&#34;&gt;&lt;/a&gt; Shortcode会生成一个带有指定ID的锚点
+3.在Markdown文件中插入Shortcode
+在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：
+这行代码会在生成的HTML中插入一个带有ID:display的锚点。
+4.链接到锚点
+在Markdown文件中的其他位置创建链接，指向这个锚点：
+[跳转到锚点](#display) 5.完整示例
+## 目录 - [跳转到锚点](#display) ## 显示部分 这里是显示部分的内容。 ">
+  <meta itemprop="datePublished" content="2024-09-08T18:10:00+08:00">
+  <meta itemprop="dateModified" content="2024-09-08T18:10:00+08:00">
+  <meta itemprop="wordCount" content="35">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Welcome !</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/warning/">Warning</a>
+
+<a href="/recover/">Recover</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>在Hugo中锚点跳转的应用</h1>
+<p>
+  <i>
+    <time datetime='2024-09-08' pubdate>
+      08 Sep, 2024
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Hugo常规的锚点跳转Markdown语法为：</p>
+<ol>
+<li></li>
+</ol>
+<pre tabindex="0"><code># 目录
+* [目录一](#标题)
+</code></pre><ol start="2">
+<li></li>
+</ol>
+<pre tabindex="0"><code>## 标题
+//跳转目的地
+</code></pre><p>而锚点跳转到页面指定位置，并非某段文章标题时，可以使用Hugo Shortcodes，操作如下：</p>
+<p><em><strong>1.创建Shortcode文件</strong></em></p>
+<p>Hugo项目的根目录下，找到或创建一个layouts/shortcodes 目录。</p>
+<p><em><strong>2.编辑Shortcode文件</strong></em></p>
+<p>编辑或创建anchor.html文件，并添加如下内容：</p>
+<pre tabindex="0"><code>&lt;a id=&#34;{{ .Get &#34;id&#34; }}&#34;&gt;&lt;/a&gt;
+</code></pre><p>Shortcode会生成一个带有指定ID的锚点</p>
+<p><em><strong>3.在Markdown文件中插入Shortcode</strong></em></p>
+<p>在Markdown文件中，使用Shortcode来插入跳转到目的地的锚点：</p>
+<p><img src="https://github.com/luca6868/hugo-y/blob/main/img/shortcode.jpg?raw=true" alt="描述图片" title="图片标题"></p>
+<p>这行代码会在生成的HTML中插入一个带有ID:display的锚点。</p>
+<p><em><strong>4.链接到锚点</strong></em></p>
+<p>在Markdown文件中的其他位置创建链接，指向这个锚点：</p>
+<pre tabindex="0"><code>[跳转到锚点](#display)
+</code></pre><p><em><strong>5.完整示例</strong></em></p>
+<pre tabindex="0"><code>## 目录
+
+- [跳转到锚点](#display)
+
+## 显示部分
+
+<a id="display"></a>
+这里是显示部分的内容。
+</code></pre>
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>By <a href="https://y.jinye.org/">/ᐠ｡ꞈ｡ᐟ\ Don't die before you're dead</a>
+</footer>
+
+    
+</body>
+
+</html>

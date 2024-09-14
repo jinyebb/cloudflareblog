@@ -13,6 +13,8 @@ tags = []
 ## 目录
 * [HACS无法安装midea ac lan的解决](#ha01)
 * [Cloudflare tunnels绑定HA页面400: Bad Request的解决](#ha02)
+* [Home Assistant通过手机来确定人员是否在家: Bad Request的解决](#ha03)
+
 
 ---
 
@@ -90,3 +92,30 @@ docker restart homeassistant
 ***3.验证访问***
 
 重启后，尝试通过你的域名访问Home Assistant，查看是否解决了400: Bad Request错误。
+
+---
+
+
+{{< anchor id="ha03" >}}
+
+## Home Assistant通过手机来确定人员是否在家
+
+原理是Home Assistant服务端ping局域网内的手机IP，ping的通表示在家，ping不通表示离家。
+
+**1.添加ping集成**
+
+* 在设置-设备与服务-添加集成中输入ping添加ping集成。
+
+* 输入手机内网IP（将手机DHCP自动获取内网IP改为手动获取）
+
+**2.配置ping集成**
+
+进入该设备的实体列表，将刚添加的内网设备中的 已启用 与 可见 勾选。
+
+**3.绑定设备和人员**
+
+进入设置-人员，在 选择属于此人的设备 下添加刚才创建的ping集成设备。
+
+**4.返回首页**
+
+即可看到人员在家状态

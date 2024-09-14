@@ -13,8 +13,8 @@ tags = []
 ## 目录
 * [HACS无法安装midea ac lan的解决](#ha01)
 * [Cloudflare tunnels绑定HA页面400: Bad Request的解决](#ha02)
-* [Home Assistant通过手机来确定人员是否在家: Bad Request的解决](#ha03)
-
+* [Home Assistant通过手机来确定人员是否在家](#ha03)
+* [Home Assistant人员活动状态设置邮件通知](#ha04)
 
 ---
 
@@ -119,3 +119,43 @@ docker restart homeassistant
 **4.返回首页**
 
 即可看到人员在家状态
+
+
+---
+
+
+{{< anchor id="ha04" >}}
+
+## Home Assistant人员活动状态设置邮件通知
+
+**1.配置SMTP服务器**
+
+* 在 configuration.yaml 中添加以下配置：
+```
+notify:
+  - name: mail
+    platform: smtp
+    server: smtp-mail.outlook.com
+    port: 587
+    sender: name@outlook.com
+    encryption: starttls
+    username: name@outlook.com.au
+    password: password
+    recipient:
+      - recipient-email@example.com
+    sender_name: 'Home Assistant'
+```
+
+* 替换 smtp-mail.outlook.com 为你的邮件服务提供商的 SMTP 服务器地址。
+
+* 替换 name@outlook.com 和 password 为你的邮件账户和密码。
+
+* recipient-email@example.com 是你要接收通知的电子邮件地址。
+
+**2.重启 Home Assistant**
+
+配置文件更改后，重启 Home Assistant 使其生效。
+
+**4.创建通知自动化**
+
+进入 设置 - 自动化与场景，在 创建新的自动化 页面选择触发条件与执行动作。

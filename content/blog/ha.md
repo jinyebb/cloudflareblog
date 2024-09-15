@@ -174,7 +174,7 @@ notify:
 
 iPhone Detect组件，用于检测连接到本地 LAN 的 手机，即使手机处于深度睡眠状态。
 
-* [下载iphonedetect] (https://github.com/mudape/iphonedetect/releases "Title")
+*  [下载iphonedetect](https://github.com/mudape/iphonedetect/releases "Title")
 
 * iphonedetect 文件放入 custom_components 目录下，
 

@@ -101,7 +101,6 @@ docker restart homeassistant
 
 ## Home Assistant通过手机来确定人员是否在家
 
-提示：当手机长时间空闲时会因电池保护策略自动断开WIFI连接，人员状态会变的不准确，所以该方案并非最优解，推荐使用 iphonedetect 组件，当手机在睡眠状态，HA仍然可以与手机建立连接，iphonedetect配置过程在顶部目录跳跃查看。
 
 原理是Home Assistant服务端ping局域网内的手机IP，ping的通表示在家，ping不通表示离家。
 
@@ -122,6 +121,9 @@ docker restart homeassistant
 **4.返回首页**
 
 即可看到人员在家状态
+
+
+提示：当手机长时间空闲时会因电池保护策略自动断开WIFI连接，人员状态会变的不准确，所以该方案并非最优解，推荐使用 iphonedetect 组件，当手机在睡眠状态，HA仍然可以与手机建立连接，iphonedetect配置过程在顶部目录跳跃查看。
 
 
 ---

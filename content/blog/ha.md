@@ -15,6 +15,7 @@ tags = []
 * [Cloudflare tunnels绑定HA页面400: Bad Request的解决](#ha02)
 * [Home Assistant通过手机来确定人员是否在家](#ha03)
 * [Home Assistant人员活动状态设置邮件通知](#ha04)
+* [因手机电池保护策略 人员状态无法准确获取的解决](#ha05)
 
 ---
 
@@ -100,6 +101,8 @@ docker restart homeassistant
 
 ## Home Assistant通过手机来确定人员是否在家
 
+提示：当手机长时间空闲时会因电池保护策略自动断开WIFI连接，人员状态会变的不准确，所以该方案并非最优解，推荐使用 iphonedetect 组件，当手机在睡眠状态，HA仍然可以与手机建立连接，iphonedetect配置过程在顶部目录跳跃查看。
+
 原理是Home Assistant服务端ping局域网内的手机IP，ping的通表示在家，ping不通表示离家。
 
 **1.添加ping集成**
@@ -159,3 +162,35 @@ notify:
 **4.创建通知自动化**
 
 进入 设置 - 自动化与场景，在 创建新的自动化 页面选择触发条件与执行动作。
+
+
+---
+
+{{< anchor id="ha05" >}}
+
+## 因手机电池保护策略 人员状态无法准确获取的解决
+
+iPhone Detect组件，用于检测连接到本地 LAN 的 手机，即使手机处于深度睡眠状态。
+
+* [下载iphonedetect] (https://github.com/mudape/iphonedetect/releases "Title")
+
+* iphonedetect 文件放入 custom_components 目录下，
+
+* 修改 configuration.yaml 配置，添加如下内容：
+```
+device_tracker:
+  - platform: iphonedetect
+    consider_home: 60
+    scan_interval: 12
+    new_device_defaults:
+      track_new_devices: true
+    hosts:
+      hostname1: 192.168.0.201
+      hostname2: 192.168.0.202
+```
+
+* 重启 HA
+
+* 在 HA-人员-追踪设备 选项 选择刚才配置的 hostname1 实体。
+
+* 返回首页，检查人员状态是否生效。
